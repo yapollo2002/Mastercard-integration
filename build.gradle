@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    manifest {
+        //attributes 'Main-Class': 'com.fintrack.Example' // Replace 'com.example.MainClass' with the actual fully qualified name of your main class.
+        attributes 'Main-Class': 'com.fintrack.Example'
+    }
+}
+
+
+dependencies {
+//    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2'
+//    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
+    //implementation group: 'com.mastercard.developer', name: 'oauth1-signer', version: '1.5.2'
+    implementation "com.mastercard.developer:oauth1-signer:1.5.2"
+}
+
+//test {
+//    useJUnitPlatform()
+//}
